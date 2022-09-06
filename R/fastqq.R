@@ -162,7 +162,7 @@ if (length(colour)>1) # if user provides a colour vector
   if (!missing(ylab)) { ylbl=ylab; } # if ylab provided, use that instead
   fac=0.4; xbnd=c(0,max(m$p2)+fac); ybnd=c(0,max(m$p1)+fac); # add a bit of space in top corner
 
-  plot(m$p2,m$p1,col=m$colour,pch=20,cex=cex,cex.axis=cex.axis,las=1,xaxs="i",yaxs="i",xlim=xbnd,ylim=ybnd,xlab=xlbl,ylab=ylbl,...);
+  plot(m$p2,m$p1,col=m$colour,pch=20,cex=cex,cex.axis=cex.axis,las=1,xaxs="i",yaxs="i",xlim=xbnd,xlab=xlbl,ylab=ylbl,...);
   abline(0,1,col = "red");
   if (lambda) { text(x=max(m$p2)*0.05,y=max(m$p1),labels=bquote(lambda == .(round(lmb,digits=4))),adj=c(0,1)); } # show labmda unless requested
 
@@ -188,7 +188,7 @@ else
   if (!missing(ylab)) { ylbl=ylab; } # if ylab provided, use that instead
   fac=0.4; xbnd=c(0,max(m$p2)+fac); ybnd=c(0,max(m$p1)+fac); # add a bit of space in top corner
 
-  plot(m$p2,m$p1,col=colour,pch=20,cex=cex,cex.axis=cex.axis,las=1,xaxs="i",yaxs="i",xlim=xbnd,ylim=ybnd,xlab=xlbl,ylab=ylbl,...);
+  plot(m$p2,m$p1,col=colour,pch=20,cex=cex,cex.axis=cex.axis,las=1,xaxs="i",yaxs="i",xlim=xbnd,xlab=xlbl,ylab=ylbl,...);
   abline(0,1,col = "red");
   if (lambda) { text(x=max(m$p2)*0.05,y=max(m$p1),labels=bquote(lambda == .(round(lmb,digits=4))),adj=c(0,1)); } # show labmda unless requested
 
